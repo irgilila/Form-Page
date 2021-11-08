@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey</title>
+    <link rel="stylesheet" href="./index.css">
+</head>
+<body>
+    <header>
+        <h1 id="title">Web Development Survey</h1>
+        <p id="description"><i>This is a small survey regarding web development and your understanding/goals for it.</i></p>
+    </header>
+    <main id="main-flex" >
+        <form id="survey-form">
+            <label id="name-label">Name</label>
+            <input id="name" type="text" placeholder="Enter your name" required  >
+            <label id="email-label">Email</label>
+            <input id="email" type="email" placeholder="Enter your email" required >
+            <label id="number-label">Age</label>
+            <input id="number" type="number" min="18" placeholder="Select age" required >
+            
+            <label for="dropdown">What is your current status?</label> 
+            <select class="dropdown" id="dropdown" required  >
+                
+                <option value="Employed">Employed</option>
+                <option value="Unemployed">Unemployed</option>
+                <option value="Student">Student</option>
+                <option value="Other">Other</option>
+            </select>
+            <label id="radio-head">How would you rate your communication skills?</label>
+            <input name="skills" class="radio-circle" type="radio" value="very-good" id="very-good">
+            <label class="radio-options" for="very-good">Very good</label><br>
+            <input name="skills" class="radio-circle" type="radio" value="good" id="good">
+            <label class="radio-options" for="good">Good</label><br>
+            <input name="skills" class="radio-circle" type="radio" value="decent" id="decent">
+            <label class="radio-options" for="decent">Decent</label><br>
+            <input name="skills" class="radio-circle" type="radio" value="bad" id="bad">
+            <label class="radio-options" for="bad">Bad</label>
+            
+            <label for="second-dropdown">What do you think is the best way of learning?</label> 
+            <select class="dropdown" id="second-dropdown" required  >
+                
+                <option value="Visually">Visually</option>
+                <option value="Auditory">Auditory</option>
+                <option value="Kinesthetic">Kinesthetic</option>
+                <option value="Reading/Writing">Reading/Writing</option>
+                <option value="Other">Other</option>
+            </select>
+            
+            <label id="checkbox-head">What do you want to improve on?</label>
+            <input type="checkbox" name="learn" value="html" class="radio-circle" id="html" >
+            <label for="html" class="radio-options">HTML</label><br>
+            <input type="checkbox" name="learn" value="css" class="radio-circle" id="css" >
+            <label for="css" class="radio-options">CSS</label><br>
+            <input type="checkbox" name="learn" value="javascript" class="radio-circle" id="javascript" >
+            <label for="javascript" class="radio-options">JavaScript</label><br>
+            <input type="checkbox" name="learn" value="c++" class="radio-circle" id="c++" >
+            <label for="c++" class="radio-options">C++</label><br>
+            <input type="checkbox" name="learn" value="c#" class="radio-circle" id="c#" >
+            <label for="c#" class="radio-options">C#</label><br>
+            <input type="checkbox" name="learn" value="python" class="radio-circle" id="python" >
+            <label for="python" class="radio-options">Python</label><br>
+            <input type="checkbox" name="learn" value="sql" class="radio-circle" id="sql" >
+            <label for="sql" class="radio-options">SQL</label><br>
+
+            <label id="comment-head" for="text-area" >Any comments or suggestions?</label>
+            <textarea id="text-area" ></textarea>
+            
+
+            
+
+
+            <input id="submit-button" type="submit" value="Submit">
+        </form>
+
+    </main>
+    
+</body>
+</html>

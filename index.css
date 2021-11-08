@@ -1,0 +1,121 @@
+body {
+  min-height: 100%;
+  background-image: url("./jonatan-pie-3l3RwQdHRHg-unsplash.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-position: center center;
+  background-attachment: fixed;
+}
+#title {
+  color: white;
+  text-align: center;
+}
+#main-flex {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: auto;
+}
+#survey-form {
+  background-color: rgba(0, 255, 255, 0.7);
+  align-self: center;
+
+  height: auto;
+  width: 700px;
+  padding: 30px 15px;
+  margin-top: 30px;
+
+  border-radius: 1%;
+}
+input {
+  align-self: center;
+  width: 100%;
+  box-sizing: border-box;
+  font-size: 2vh;
+  padding: 5px;
+  margin-bottom: 25px;
+  border-radius: 5px;
+  outline: none;
+  border: 2px solid black;
+  transition: 0.5;
+}
+label {
+  font-size: 3vh;
+  display: block;
+  margin-bottom: 5px;
+}
+#description {
+  text-align: center;
+  color: white;
+  font-size: 2vh;
+  margin-top: -5px;
+}
+.dropdown {
+  align-self: center;
+  width: 100%;
+  font-size: 2vh;
+  padding: 5px;
+  margin-bottom: 25px;
+  cursor: pointer;
+  border-radius: 5px;
+  border: 2px solid black;
+  transition: 0.5;
+  outline: none;
+}
+#submit-button {
+  margin-top: 35px;
+  background-color: #0ff868;
+  border-radius: 0px;
+  margin-bottom: -10px;
+}
+
+.radio-options {
+  display: inline;
+  font-size: 2.5vh;
+}
+.radio-circle {
+  width: auto;
+  cursor: pointer;
+}
+#radio-head {
+  margin-bottom: 20px;
+}
+.check-options {
+  display: inline;
+  font-size: 2.5vh;
+}
+#checkbox-head {
+  margin-bottom: 20px;
+}
+#text-area {
+  width: 99%;
+  height: 18vh;
+  border-radius: 5px;
+  border: 2px solid black;
+  transition: 0.5;
+  outline: none;
+  resize: none;
+}
+#comment-head {
+  font-size: 3vh;
+  margin-bottom: 15px;
+}
+@media (max-width: 800px) {
+  #survey-form {
+    width: auto;
+  }
+  body {
+    background-size: cover;
+  }
+}
+#submit-button:hover {
+  cursor: pointer;
+  background-color: #0abe4f;
+}
+input:focus {
+  border: 2px solid greenyellow;
+}
+
+#text-area:focus {
+  border: 2px solid greenyellow;
+}
